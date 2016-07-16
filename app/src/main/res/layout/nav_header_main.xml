@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="bottom"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+        <ImageView
+            android:id="@+id/imageCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/nav_header_image"
+            android:alpha=".3"
+            android:background="#00000000"
+            android:scaleType="centerCrop"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/user_profile_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/default_user_profile"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                app:civ_border_width="0dp"
+                app:civ_shadow="true"
+                app:civ_shadow_color="@color/background_bg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                android:text="Guest"
+                android:id="@+id/nav_title"
+                android:textSize="20sp"
+                android:typeface="monospace"
+                android:textStyle="bold"
+                android:layout_marginLeft="3dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/nhm_user_name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                android:text="Email Id"
+                android:id="@+id/nav_title_email"
+                android:textSize="20sp"
+                android:typeface="monospace"
+                android:textStyle="bold"
+                android:layout_marginLeft="3dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/nhm_user_name"/>
+
+            <!--<TextView-->
+                <!--android:id="@+id/nav_subtitle"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Access Granted"-->
+                <!--android:typeface="monospace"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--/>-->
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
+
+<!--<ImageView-->
+<!--android:id="@+id/imageCover"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:src="@drawable/logo_playcode"-->
+<!--android:alpha=".250"-->
+<!--android:scaleType="centerCrop"-->
+    <!--/>-->

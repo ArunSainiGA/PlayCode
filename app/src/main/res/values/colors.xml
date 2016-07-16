@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    //background toolbar
+    <color name="background_bg">#0085BB</color>
+
+    //common text colors
+    <color name="game_name">#333333</color>
+    <color name="category_name">#666666</color>
+    <color name="price">#777777</color>
+    <color name="category_main">#333333</color>
+    <color name="view_all">#333333</color>
+    <color name="game_desc">#666666</color>
+    <color name="toolbar_text">#FFFFFF</color>
+    <color name="connection_status_bg">#FF3F34</color>
+    <color name="connection_status_text">#FFFFFF</color>
+
+
+
+    //activity_main
+    <color name="nav_element_text_color">#E6E7E9</color>
+    <color name="nav_cat_text_color">#333333</color>
+    <color name="nav_div_bg">#E0E0E0</color>
+    <color name="nav_sign_button_text_color">#333333</color>
+
+    //content_main
+    <color name="cm_root_bg">#E6E7E9</color>
+
+    //game_desc_layout
+    <color name="gdl_root_bg">#E6E7E9</color>
+    <color name="gdl_game_details_bg">#FFFFFF</color>
+    <color name="gdl_game_description_bg">#FFFFFF</color>
+
+    //grid_cards
+    <color name="gc_download_btn">#FFFFFF</color>
+
+    //grid_cards_category
+    <color name="gcc_download_btn">#FFFFFF</color>
+
+    //grid_view_home_base
+    <color name="gvhb_root_bg">#E6E7E9</color>
+    <color name="gvhb_grids_bg">#E6E7E9</color>
+
+    //image_viewer_layout
+    <color name="iv_root_bg">#000000</color>
+
+    //list_view_home
+    <color name="lvh_rounded_image_corner">#616060</color>
+    <color name="lvh_download_btn">#FFFFFF</color>
+
+    //list_view_home_base
+    <color name="lvhb_root_bg">#E6E7E9</color>
+
+    //list_view_menu_items
+    <color name="lvmi_text">#FFFFFF</color>
+    <color name="lvmi_div">#333333</color>
+    <color name="lvmi_item_selected">#E0E0E0</color>
+    <color name="lvmi_item_unselected">#FFFFFF</color>
+
+    //login_activity
+    <color name="la_root_bg">#292929</color>
+    <color name="la_app_name_text">#FFFFFF</color>
+    <color name="la_fb_bg">#3D5A98</color>
+    <color name="la_fb_text">#FFFFFF</color>
+    <color name="la_google_bg">#20B8FF</color>
+    <color name="la_google_text">#FFFFFF</color>
+    <color name="la_download_msg_text">#FFFFFF</color>
+    <color name="la_skip_text">#FFFFFF</color>
+
+    //nav_header_main
+    <color name="nhm_user_name">#FFFFFF</color>
+
+    //splash
+    <color name="s_bg">#023141</color>
+
+
+
+</resources>

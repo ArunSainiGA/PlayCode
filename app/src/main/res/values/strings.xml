@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Play Code</string>
+    <string name="game_desc_activity">Game Description</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="download_button">Download</string>
+    <string name="facebook_login_string">Log in </string>
+    <string name="facebook_app_id">297822257219043</string>
+    <string name="connection_toast">Internet is not connected.</string>
+    <string name="twitter_api_key">ku40nmZgQoCNFzjhB5Icd9ftq</string>
+    <string name="twitter_secret_key">Fo1juB1e64g7Up7DNtY2xAMAqKhY7CdltLPgCUiXhUUc2g3SQp</string>
+</resources>

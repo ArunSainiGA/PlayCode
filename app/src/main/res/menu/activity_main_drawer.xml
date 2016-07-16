@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group"
+        >
+        <!--<item-->
+            <!--android:id="@+id/nav_puzzle"-->
+            <!--android:icon="@drawable/ic_menu_camera"-->
+            <!--android:title="Puzzle" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_sport"-->
+            <!--android:icon="@drawable/ic_menu_gallery"-->
+            <!--android:title="Sports" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_action"-->
+            <!--android:icon="@drawable/ic_menu_slideshow"-->
+            <!--android:title="Action" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_arcade"-->
+            <!--android:icon="@drawable/ic_menu_manage"-->
+            <!--android:title="Arcade" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_casual"-->
+            <!--android:icon="@drawable/ic_menu_manage"-->
+            <!--android:title="Casual" />-->
+    </group>
+
+    <!--<item android:title="Cygnus">-->
+        <!--<menu>-->
+            <!--<group android:checkableBehavior="single">-->
+            <!--<item-->
+                <!--android:id="@+id/nav_facebook"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Facebook"-->
+                <!--/>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_twitter"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Twitter" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_google_plus"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Google Plus" />-->
+            <!--</group>-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

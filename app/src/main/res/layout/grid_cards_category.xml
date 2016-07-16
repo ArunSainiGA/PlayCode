@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_grid_category"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gridview_home_selector"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/game_icon_category"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:adjustViewBounds="true"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/small_logo_playcode"
+            app:riv_corner_radius="4dp"/>
+    <TextView
+        android:id="@+id/game_name_category"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:text="Name of the game blah blah blah"
+        android:textColor="@color/game_name"
+        android:textSize="17sp" />
+
+
+    <RatingBar
+        android:id="@+id/game_rating_category"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="1"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="0.1" />
+
+    <TextView
+        android:id="@+id/game_price_category"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:layout_weight="1"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Price"
+        android:textColor="@color/price"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            android:id="@+id/game_download_button_category"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/gc_button_selector"
+            android:text="@string/download_button"
+            android:textAllCaps="false"
+            android:textColor="@color/gcc_download_btn"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

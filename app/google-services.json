@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1036371047630",
+    "project_id": "playcode-1357"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036371047630:android:e7567881390b0481",
+        "android_client_info": {
+          "package_name": "com.cycus.playcodeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036371047630-nfkc8d46vkipsufvp1ehnc9l0hcg4nlt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cycus.playcodeapp",
+            "certificate_hash": "E673E70EE7E5BB91762FCBA54E1379ACB23CC7A5"
+          }
+        },
+        {
+          "client_id": "1036371047630-idi7jlrbd6q5gj2agsrspi17605g21id.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVr51So_Jt0ON3Wu0fj-igRRkRXu6KcpA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
