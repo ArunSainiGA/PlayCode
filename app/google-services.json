@@ -1,7 +1,9 @@
 {
   "project_info": {
     "project_number": "1036371047630",
-    "project_id": "playcode-1357"
+    "firebase_url": "https://playcode-1357.firebaseio.com",
+    "project_id": "playcode-1357",
+    "storage_bucket": "playcode-1357.appspot.com"
   },
   "client": [
     {
@@ -21,6 +23,10 @@
           }
         },
         {
+          "client_id": "1036371047630-ovdqqt72tp5ukut2bk1m80gdmfcb6mpf.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
           "client_id": "1036371047630-idi7jlrbd6q5gj2agsrspi17605g21id.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -35,11 +41,16 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036371047630-ovdqqt72tp5ukut2bk1m80gdmfcb6mpf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
-          "status": 1
+          "status": 2
         }
       }
     }

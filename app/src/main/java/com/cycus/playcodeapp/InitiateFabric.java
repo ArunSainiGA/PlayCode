@@ -4,6 +4,7 @@ import android.app.Application;
 import android.support.multidex.MultiDex;
 import android.util.Log;
 
+import com.crashlytics.android.Crashlytics;
 import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.Tracker;
 import com.twitter.sdk.android.Twitter;
@@ -22,7 +23,7 @@ public class InitiateFabric extends Application {
         super.onCreate();
         MultiDex.install(this);
         TwitterAuthConfig config = new TwitterAuthConfig(getResources().getString(R.string.twitter_api_key), getResources().getString(R.string.twitter_secret_key));
-        Fabric.with(this, new Twitter(config));
+        Fabric.with(this, new Twitter(config), new Crashlytics());
         Log.i("FABRIC_INITIALIZATION", "done");
     }
 
@@ -31,6 +32,9 @@ public class InitiateFabric extends Application {
             GoogleAnalytics analytics = GoogleAnalytics.getInstance(this);
 //            analytics.setLocalDispatchPeriod(1);
             tracker = analytics.newTracker(R.xml.app_tracker);
+            tracker.enableAutoActivityTracking(true);
+            tracker.enableExceptionReporting(true);
+            GoogleAnalytics.getInstance(this).enableAutoActivityReports(InitiateFabric.this);
         }
         return tracker;
     }

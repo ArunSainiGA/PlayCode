@@ -17,9 +17,14 @@ import com.cycus.playcodeapp.ModelManagers.ModelManager;
 import com.cycus.playcodeapp.R;
 import com.cycus.playcodeapp.SetterGetter.UserFacebookBean;
 import com.cycus.playcodeapp.Utils.DisplayDimension;
+import com.cycus.playcodeapp.Utils.TestException;
 import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
+import com.google.firebase.FirebaseException;
+import com.google.firebase.crash.FirebaseCrash;
+
+import junit.framework.Test;
 
 import de.greenrobot.event.EventBus;
 import de.greenrobot.event.Subscribe;
@@ -37,15 +42,22 @@ public class SplashActivity extends AppCompatActivity {
 
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        Fabric.with(this, new Crashlytics(), new CrashlyticsNdk());
         setContentView(R.layout.splash_layout);
         getDisplaySize();
+
+//        FirebaseCrash.report(new FirebaseException("FireBase Exception..."));
+//        try{
+//            int x =5/0;
+//        }catch(TestException ex){
+//            new TestException(ex.getMessage());
+//        }
 
         InitiateFabric application = (InitiateFabric) getApplication();
         tracker = application.getDefaultTracker();
         String isValid = new DataStore(this).isValid();
+
         if (isValid.equals(""))
             intent = new Intent(this, LoginActivity.class);
         else
@@ -68,6 +80,7 @@ public class SplashActivity extends AppCompatActivity {
 
 
     }
+
 
     public void getDisplaySize() {
         DisplayMetrics displayMetrics = new DisplayMetrics();
@@ -108,6 +121,6 @@ public class SplashActivity extends AppCompatActivity {
         super.onResume();
         tracker.setScreenName("SplashActivity");
         tracker.send(new HitBuilders.ScreenViewBuilder().build());
-        GoogleAnalytics.getInstance(this).dispatchLocalHits();
+//        GoogleAnalytics.getInstance(this).dispatchLocalHits();
     }
 }
